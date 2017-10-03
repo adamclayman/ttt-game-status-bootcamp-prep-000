@@ -59,7 +59,7 @@ end
 def winner(board)
   if (won?(board))
     win_combo = won?(board)
-    binding.pry
+    binding.pry(win_combo[0])
     if win_combo[0] == "X"
       return "X"
     elsif win_combo[0] == "O"
