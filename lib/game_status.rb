@@ -1,3 +1,5 @@
+require "pry"
+
 # Helper Method
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
@@ -61,6 +63,7 @@ end
 def winner(board)
   if (won?(board))
     win_combo = won?(board)
+    binding.pry
     sample_index = win_combo[0]
     if board[sample_index] == "X"
       return "X"
