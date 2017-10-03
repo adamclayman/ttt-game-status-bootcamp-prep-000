@@ -61,10 +61,11 @@ end
 def winner(board)
   if (won?(board))
     win_combo = won?(board)
+    sample_index = win_combo[0]
 #    binding.pry(win_combo[0])
-    if win_combo[0] == "X"
+    if board[sample_index] == "X"
       return "X"
-    elsif win_combo[0] == "O"
+    elsif board[sample_index] == "O"
       return "O"
     end
   end
