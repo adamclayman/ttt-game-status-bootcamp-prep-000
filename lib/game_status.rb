@@ -58,10 +58,10 @@ end
 
 def winner(board)
   if (won?(board) != false)
-    win_array = won?(board)
-    if won?(board) == "X"
+    win_combo = won?(board)
+    if win_combo[0] == "X"
       return "X"
-    elsif win_array[0] == "O"
+    elsif win_combo[0] == "O"
       return "O"
     end
   end
