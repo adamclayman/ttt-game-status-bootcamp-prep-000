@@ -31,6 +31,8 @@ def won?(board)
     return false
   elsif (board == [" ", " ", " ", " ", " ", " ", " ", " ", " "] || board == ["","","","","","","","",""]) #  
     return false
+  else
+    return false
   end
 end
 
